@@ -120,7 +120,7 @@ building_four.num_floors = 0
 # end
 
 
-#This can only be done if each instance is stored as a hash
+#This can only be done if each instance is stored as a hash?
 
 # def how_many_apartments(*answer)
 #   if answer.length == 0
