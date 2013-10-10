@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Positioning</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!-- relative positioning -->
+	<div class="container">
+	
+		I'm a static parent.
+	
+		<div class="box relative">
+			I'm a box positioned relatively.
+		</div>
+	
+	</div><!-- container -->
+	
+	<!-- absolute positioning -->
+	<div class="container">
+	
+		I'm a static parent.
+		
+		<div class="box absolute">
+			I'm a box positioned absolutely inside a static parent.
+		</div>
+	
+	</div><!-- container -->
+	
+	<div class="relative-container">
+	
+		I'm a relatively positioned parent.
+		
+		<div class="box absolute">
+			I'm a box positioned absolutely inside a relative parent.
+		</div>
+	
+	</div><!-- releative-container -->
+	
+	<!-- fixed positioning -->
+	<div class="container">
+	
+		I'm a static parent.
+		
+		<div class="box fixed">
+			I'm a box with fixed positioning inside a static parent.
+		</div>
+	
+	</div><!-- container -->
+	
+	<!-- using z-index -->
+	<div class="relative-container">
+	
+		I'm a relatively positioned parent.
+		
+		<div class="box z1">
+			I have a z-index of 1.
+		</div>
+		
+		<div class="box z2">
+			I have a z-index of 2.
+		</div>
+		
+		<div class="box z3">
+			I have a z-index of 3.
+		</div>
+		
+		<div class="box z-1">
+			I have a z-index of -1.
+		</div>
+	
+	</div><!-- relative container -->
+	
+</body>
+</html>

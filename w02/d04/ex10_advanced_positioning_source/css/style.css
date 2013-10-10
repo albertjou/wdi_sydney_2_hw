@@ -1,0 +1,65 @@
+*, html, body {
+	padding:0;
+	margin:0;
+}
+
+.container {
+	width:800px;
+	background:#ccc;
+	margin:10px;
+	padding:5px;
+}
+
+.box {
+	width:100px;
+	height:100px;
+	background:aqua;
+	padding:10px;
+	margin:10px;
+	border:1px solid black;
+}
+
+.relative-container {
+	position:relative;
+	width:800px;
+	height:100px;
+	background:#efefef;
+	margin:10px;
+	padding:5px;
+}
+
+
+.box.relative {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    background-color: yellow;
+}
+.box.absolute {
+    top: 30px;
+    left: 80px;
+    position: absolute;
+}
+.relative-container .box.absolute {
+    position: absolute;
+    top: -50px;
+    left: 200px;
+}
+.container .box fixed {
+    top: 0;
+    right: 50px;
+    position: fixed;
+}
+.box.z1 {
+    position: absolute;
+    top:  15px;
+    left: 0;
+    z-index: 1;
+    background: rgb(18, 114, 114);
+}
+.box.fixed {
+    position:  fixed;
+    top: 20px;
+    right: 20px;
+    background-color: aliceblue;
+}

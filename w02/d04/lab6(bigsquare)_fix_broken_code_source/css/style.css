@@ -92,15 +92,22 @@ nav {
 }
 
 
+
 	nav ul li {
+<<<<<<< HEAD
 		/* float: left; */
 		display: inline;
 		margin-right: 20px;	
+=======
+		display: inline-block;
+		margin-right: 20px;
+		padding: 10px 0;	
+>>>>>>> 6e93778ed199a966851bd27310196f72f049b90d
 	}
 
 		
 	nav li a {
-		display: block;
+		display: inline;
 		width: 100px;
 		padding: 10px 0px;
 		
@@ -118,6 +125,7 @@ nav {
 
 #socialMedia {
 	float: right;
+
 }
 
 #socialMedia ul li {
@@ -168,6 +176,16 @@ nav {
 =06 MISC 
 -----------------------------------------------------------------------------*/
 
+.img {
+	display: inline-block;
+	width: 48%;
+}
+
+.description {
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+}
 
 .clear {
 	clear: both;	
