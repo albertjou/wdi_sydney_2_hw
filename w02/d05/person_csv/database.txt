@@ -1,0 +1,3 @@
+sam, 105, m
+ben, 2005, m
+kim, 34567, female
