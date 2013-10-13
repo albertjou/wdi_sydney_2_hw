@@ -1,3 +1,11 @@
+# Homework
+
+* Movies 2 https://gist.github.com/wofockham/d0008977148b7ef6f92f
+* MTA in Sinatra
+* Ruby Koans
+
+Bonus: Redo a Sinatra app with Camping.io
+
 # Robot Name
 
 When robots come off the factory floor, they have no name.
