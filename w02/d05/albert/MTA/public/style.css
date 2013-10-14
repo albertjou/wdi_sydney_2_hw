@@ -1,0 +1,62 @@
+ul {
+  text-align: center;
+  padding: 5px, 5px, 5px, 5px;
+  display: float;
+}
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border-top: green;
+  border-left: green;
+  border-bottom: #ccc;
+  border-left: #ccc;
+
+}
+.yes {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  padding: 50px;
+}
+
+.no {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  padding: 50px;
+}
+
+.done {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  padding: 50px;
+}
+
+.button {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+.start {
+  width: 45%;
+  display: inline-block;
+}
+
+.end {
+  width: 45%;
+  display:inline-block;
+  text-align: right;
+}
+
+.submit {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}

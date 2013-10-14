@@ -1,0 +1,38 @@
+<div class="form">
+  <form action="/" method-"get">
+      <p class="s"><input id="search" type="search" name="title" placeholder="Movie title"></p>
+  </form>
+</div> <!-- form -->
+
+<div class="history column2">
+  <h2>Previous search history</h2>
+  <div class="wrapper">
+  <ul>
+    <% @list.each do |title| %>
+    <li><a href="<%= "#{title.to_s.gsub(' ','+')}" %>" alt=""><%= "#{title}" %></a></li>
+    <% end %>
+  </ul>
+  <br />
+</div> <!-- wrapper -->
+</div> <!-- history -->
+<div class="details">
+  <% if @movie %>
+   <img src="<%= "#{@movie["Poster"]}" %>" alt="Poster">
+   <br />
+  <h2><%= "#{@movie["Title"]}"%><span class="year"><%= "#{@movie["Year"]}"%></span></h2>
+    <br />
+    <ul class="minibar">
+      <li><%= "#{@movie["Rated"]}"%></li>
+      <li><%= "#{@movie["Genre"]}"%></li>
+      <li><%= "#{@movie["Runtime"]}"%></li>
+      <li><span class="title">Rating: </span><%= "#{@movie["imdbRating"]}"%></li>
+    </ul>
+   <ul>
+    <li><h3>Plot</h3><%= "#{@movie["Plot"]}"%></li>
+    <li><h3>Director</h3><%= "#{@movie["Director"]}"%></li>
+    <li><h3>Actors</h3><%= "#{@movie["Actors"]}"%></li>
+    <li><h3>Writer</h3><%= "#{@movie["Writer"]}"%></li>
+  </ul>
+</div>
+</div>
+<% end %>
