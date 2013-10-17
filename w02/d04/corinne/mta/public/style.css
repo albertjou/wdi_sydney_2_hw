@@ -1,0 +1,151 @@
+
+
+body {
+  background: url('http://shutterchi.com/wp-content/uploads/2012/02/IMG_8715.jpg')no-repeat center center fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: rgba(36, 96, 166, 1);
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+header img {
+  width: 152px;
+  height: 167px;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 0;
+  border-radius: 40px;
+  border: 10px solid rgba(0, 0, 0, .9);
+  position: absolute;
+}
+
+article {
+  color: rgba(69, 117, 171, 1);
+
+}
+
+#class {
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 70px;
+  background-color: rgba(0, 0, 0, .9);
+  font-family: 'Passion One', cursive;
+  width: 4em;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 120px;
+  border: 5px solid rgba(0, 0, 0, .9);
+  border-radius: 40px;
+  color: rgba(36, 96, 166, 1);
+}
+
+h2 {
+  background-color: rgba(0, 0, 0, .9);
+  border: 5px solid rgba(0, 0, 0, .9);
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  margin-right: -10px;
+  margin-left: -10px;
+
+}
+
+label {
+  background-color: rgba(0, 0, 0, .9);
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  border: 5px solid rgba(0, 0, 0, .9);
+  margin-right: -10px;
+  margin-left: -10px;
+
+}
+
+p {
+  background-color: rgba(0, 0, 0, .9);
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;8);
+  margin-top: -10px;
+  margin-right: -10px;
+  margin-bottom: -20px;
+  margin-left: -10px;
+
+}
+
+footer {
+  position:relative;
+  bottom:0;
+  width:100px;
+  height:18px;
+  background-color: rgba(0, 0, 0, .9);
+  border: 5px solid rgba(0, 0, 0, .9);
+  font-size: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5px;
+}
+
+select {
+  margin-top: 15px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  border: solid rgba(0, 0, 0, .9);
+  border-top-width: 12px;
+  border-right-width: 40px;
+  border-bottom-width: 10px;
+  border-left-width: 30px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  background-color: #C0C0C0;
+}
+
+input[type="submit"] {
+  background-color: rgba(36, 96, 166, 1);
+  color: #ddd;
+  border: 5px solid rgba(0, 0, 0, .9);
+  border-top-width: 12px;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 10px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+
+li {
+  background-color: rgba(0, 0, 0, .9);
+  margin-right: -10px;
+  margin-left: -10px;
+  list-style-type: none;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border: 5px solid rgba(0, 0, 0, .9);
+  margin-top: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  margin-left: -50px;
+
+}
+
+
+
+
+
+

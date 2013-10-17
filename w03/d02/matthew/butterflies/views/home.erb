@@ -1,0 +1,10 @@
+<h1> All Butterflies </h1>
+
+<div class='main'>
+  <ul>
+    <% @row.each do |row| %>
+    <li><a href="/butterflies/<%=row['id']%>"><%= row['name']%></a></li>
+    <li><img src="<%=row['picture']%>"></li>
+    <% end %>
+  </ul>
+</div>

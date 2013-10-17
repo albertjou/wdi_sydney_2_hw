@@ -1,0 +1,21 @@
+<h2> Edit Your Butterfly <h2>
+
+<form method="post" action="/update">
+  <label for="name">Name:</label>
+  <input name="name" placeholder="Your butterfly name here" value="<%= @row['name'] %>">
+
+  <label for="latin">Latin Name:</label>
+  <input name="latin" value="<%= @row['latin'] %>"</textarea>
+
+  <label for="family">Butterfly's Family:</label>
+  <textarea name="family" placeholder="Your butterfly's family here"><%= @row['family'] %></textarea>
+
+  <label for="picture">Photo URL</label>
+  <textarea name="picture" placeholder="Your picture URL here"><%= @row['picture'] %></textarea>
+
+  <input type="hidden" name="id" value="<%= @row['id'] %>">
+
+
+  <input type="submit" value="Update">
+</form>
+

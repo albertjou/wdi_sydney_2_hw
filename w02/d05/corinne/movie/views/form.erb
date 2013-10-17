@@ -1,0 +1,21 @@
+<form method="get" action="/">
+  <input name="movierequest" placeholder="Enter movie title">
+  <input type="submit" value="Look Up Movie">
+</form>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<article>
+
+  <!--below: if statement allows movie info to be displayed on same page as form, while not displaying anything if no movie has been requested -->
+  <% if @title %>
+    <h2><%= @movie_info["Title"] %></h2>
+      <p><b>Plot:</b> <%= @movie_info["Plot"] %></p>
+      <p><b>Year:</b> <%= @movie_info["Year"] %></p>
+      <p><b>Runtime:</b> <%= @movie_info["Runtime"] %></p>
+      <p><b>Genre:</b> <%= @movie_info["Genre"] %></p>
+      <p><b>Director:</b> <%= @movie_info["Director"] %></p>
+      <p><b>Actors:</b> <%= @movie_info["Actors"] %></p>
+      <img src=<%= @movie_info["Poster"] %>>
+  <% end %>
+</article>

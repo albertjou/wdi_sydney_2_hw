@@ -1,0 +1,8 @@
+<form method='post' action='/comment'>
+  <textarea type='text' name='comment' cols="25" rows"25"><%= @comment? @comment.comment : "Comment" %></textarea>
+<input class="in1" value='<%= @comment? @comment.commentor : "Commentor" %>' type='text' title="Title" name='commentor' autofocus>
+  <br />
+  <input type="hidden" name="id" value='<%= @post.id%>'>
+  <input type="hidden" name="comment_id" value='<%= @comment.id if @comment %>'>
+  <button><%= @comment.nil? ? "New Comment" : "Edit Comment"  %></button>
+</form>

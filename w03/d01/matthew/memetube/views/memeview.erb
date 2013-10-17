@@ -1,0 +1,10 @@
+<div class='main'><ul>
+  <li><strong> Name</strong>: <%= @video['name'] %> </li>
+  <li><strong> Description</strong>: <%= @video['description'] %> </li>
+  <li><iframe width="420" height="315" src="<%= @video['embed'] %>" frameborder="0"></iframe></li>
+  <li><strong> Genre</strong>: <%= @video['genre'] %> </li>
+  <li><a href="/videos/<%= @video['id'] %>/edit"> Edit</a></li>
+  <li><a href="/videos/<%= @video['id'] %>/delete"> Delete</a></li>
+</ul></div>
+
+<!-- <object width="480" height="360"><param name="movie" value="//www.youtube.com/v/2mjvfnUAfyo?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/2mjvfnUAfyo?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="480" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object> -->

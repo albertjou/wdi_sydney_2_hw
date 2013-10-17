@@ -1,0 +1,203 @@
+body {
+background-color:silver;
+background-image:
+radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+background-size:100px 50px;
+}
+.container {
+  position: relative;
+  max-width: 1500px;
+  min-height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(1, 2, 2, 0.77);
+  /*opacity:0.7;*/
+  border-radius: 20px;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+h1 {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 60px;
+  vertical-align: center;
+  background-color: silver;
+  opacity: 1;
+  display: inline-block;
+  border-radius: 40px;
+  color: black;
+}
+
+h2 {
+  padding-top: 110px;
+  vertical-align: middle;
+  font-size: 60px;
+  color: black;
+}
+section {
+  display: inline;
+}
+.section {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: silver;
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+  opacity: 0.6;
+  margin-bottom: 50px;
+}
+a:hover {
+  opacity: 1;
+}
+.display {
+  margin: 20px;
+  padding: 10px;
+}
+.in1 {
+  min-width: 700px;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 30px;
+}
+textarea {
+  min-height: 400px;
+  max-width: 1200px;
+  min-width: 700px;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 20px;
+}
+button {
+  margin-bottom: 40px;
+  border-radius: 20px;
+  height: 40px;
+  width: 120px;
+}
+.form_label {
+  font-size: 25px;
+  color: silver;
+  margin-right: 10px;
+  display: inline;
+}
+h3 {
+  font-size: 45px;
+  color: silver;
+  margin: 0;
+}
+.clear:before, .clear:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clear:after {
+  clear: both;
+}
+
+.words {
+  border-top: 8px dotted silver;
+  border-right: 8px dotted silver;
+  border-left: 8px dotted silver;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.content {
+  text-align: left;
+  color: silver;
+  font-size: 25px;
+  padding: 0 25px;
+}
+.created {
+  float: left;
+  color: silver;
+  padding-left: 25px;
+}
+.updated {
+  float: right;
+  color: silver;
+  padding-right: 25px;
+}
+
+#disqus_thread {
+  padding: 20px;
+  background-color: silver;
+  border-radius: 0 0 20px 20px;
+
+}
+/* ============================================================================================================================
+== OVAL THOUGHT BUBBLE (more CSS3)
+** ============================================================================================================================ */
+
+.oval-thought {
+  position: absolute;
+  right: 20px;
+  top: 1px;
+  width:100px;
+  padding:25px 20px;
+  margin:1em auto 80px;
+  text-align:center;
+  text-decoration: none;
+  color: white;
+  background: silver;
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#949393), to(silver));
+  background:-moz-linear-gradient(#949393, silver);
+  background:-o-linear-gradient(#949393, silver);
+  background:linear-gradient(#949393, silver);
+  /*
+  NOTES:
+  -webkit-border-radius:220px 120px; // produces oval in safari 4 and chrome 4
+  -webkit-border-radius:220px / 120px; // produces oval in chrome 4 (again!) but not supported in safari 4
+  Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
+  */
+  -webkit-border-top-left-radius:220px 120px;
+  -webkit-border-top-right-radius:220px 120px;
+  -webkit-border-bottom-right-radius:220px 120px;
+  -webkit-border-bottom-left-radius:220px 120px;
+  -moz-border-radius:220px / 120px;
+  border-radius:220px / 120px;
+}
+
+.oval-thought p {font-size:1.25em;}
+
+/* creates the larger circle */
+.oval-thought:before {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  left:15px;
+  width:30px;
+  height:30px;
+  background: silver;
+  /* css3 */
+  -webkit-border-radius:30px;
+  -moz-border-radius:30px;
+  border-radius:30px;
+}
+
+/* creates the smaller circle */
+.oval-thought:after {
+  content:"";
+  position:absolute;
+  bottom:-45px;
+  left:0px;
+  width:15px;
+  height:15px;
+  background: silver;
+  /* css3 */
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  border-radius:15px;
+}

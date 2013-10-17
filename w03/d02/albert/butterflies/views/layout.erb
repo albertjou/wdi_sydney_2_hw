@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title class="Three-Dee">Butterflies</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="container">
+    <h1 class="Three-Dee"><a href='/'>Butterflies</a></h1>
+    <br />
+  </nav>
+  <div class="container">
+    <%= yield %>
+    <br />
+  </div><!--container-->
+  <ul class="filters">
+    <% @nav_rows.each do |row| %>
+    <li><a href='/butterflies/<%= row['family'] %>'><%= row['family'] %></a></li>
+    <% end %>
+  </ul><!--filters -->
+        <section>
+      <a class="create_new" href="/butterflies/new">+</a>
+    </section>
+</body>
+</html>

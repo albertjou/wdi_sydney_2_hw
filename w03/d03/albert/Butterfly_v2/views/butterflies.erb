@@ -1,0 +1,23 @@
+<% @rows.each do |row| %>
+<section>
+  <h2><%= row.name %></h2>
+  <img src='<%= row.photo %>'>
+  <p><%= row.foods.map {|x| x.plant} %></p>
+  <p class="filters"><%= row.family %></p>
+  <form action='/butterflies/<%= row.id %>/delete' method='post'>
+    <br />
+    <button class="delete">Delete</button>
+  </form>
+  <form action ='/butterflies/<%= row.id %>/edit' method='get'>
+    <button class="edit">Edit</button>
+  </form>
+    <form action ='/butterflies/<%= row.id %>/foods' method='get'>
+    <button class="edit">Food</button>
+  </form>
+</section>
+<% end %>
+  <section>
+    <a class="create_new" href="/butterflies/new">+</a>
+  </section>
+
+

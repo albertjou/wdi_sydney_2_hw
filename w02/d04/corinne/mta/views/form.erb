@@ -1,0 +1,13 @@
+<form method="get" action="/">
+  <label for="start">What is your first stop?</label>
+  <select name="start">
+    <%= erb :station_menu %>
+  </select>
+
+  <label for="end">What is your last stop?</label>
+  <select name="end">
+    <%= erb :station_menu %>
+  </select>
+
+  <input type="submit" value="Submit">
+</form>

@@ -1,0 +1,7 @@
+<form method='post' action='/create'>
+  <label>Name:</label><input value='<%= @row['name'] if @row %>' type='text' name='name' autofocus>
+  <label>Photo URL:</label><input value='<%= @row['photo'] if @row %>' type='text' name='photo'>
+  <label>Family:</label><input value='<%= @row['family'] if @row %>' type='text' name='family'>
+  <input type="hidden" name="id" value='<%= @row['id'] if @row %>'>
+  <button><%= @row.nil? ? "New Butterfly" : "Edit Butterfly"  %></button>
+</form>

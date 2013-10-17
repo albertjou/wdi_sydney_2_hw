@@ -1,0 +1,11 @@
+
+<div class='main'>
+      <% @post.each do |post| %>
+        <div class='posts'>
+          <h2><a href="/post/<%=post['id']%>"><%= post['title']%></a></h2>
+          <p><%=post.body%></p>
+          <p class="center"> Posted by: <span class="myname"><b>Matthew Thees  //</b></span> <%= post['created_at'] %> //</p>
+        </div>
+        <% end %>
+  </ul>
+</div>

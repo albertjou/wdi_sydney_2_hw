@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Movie Database</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <header>
+      <h1>Movie Database</h1>
+    </header>
+    <article>
+         <!--below is how the code knows where to start the synamic part of the page-->
+      <%= yield %>
+
+      <footer>
+        &copy; Copyright CB 2013
+      </footer>
+    </article>
+
+
+  </body>
+</html>

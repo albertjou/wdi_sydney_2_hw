@@ -1,0 +1,10 @@
+
+
+<!-- there are x stops on your journey-->
+<p>Your journey will take you through the following stations:
+  <ul>
+    <% @journey.uniq.each do |stations| %>
+      <li><%= $names[stations.to_sym] %></li>
+    <%end%>
+  </ul>
+</p>

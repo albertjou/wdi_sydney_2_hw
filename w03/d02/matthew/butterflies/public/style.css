@@ -1,0 +1,76 @@
+nav {
+  border-bottom: 2px solid black;
+  position: fixed;
+  background-color: #6EA144;
+  width: 1200px;
+}
+
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  background: fixed;
+  background-image: url(http://wallike.com/wp-content/uploads/2013/07/Butterfly-Background-1280x720.jpg);
+}
+
+ul{
+  list-style: none;
+}
+
+nav ul li{
+  display: inline;
+  margin: 0 1em;
+  font-family: Times New Roman;
+}
+
+div.main {
+  width: 500px;
+  display: inline-block;
+}
+
+div.main ul li {
+  margin-top: 15px;
+}
+
+div.sidebar {
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 60px;
+  width: 180px;
+  vertical-align: top;
+  border: 2px solid black;
+}
+
+
+div.container {
+  width: 500px;
+  display: inline-block;
+  margin-left: 3em;
+}
+
+div.container label {
+  display: block;
+}
+
+div.container input {
+  display: block;
+}
+
+b {
+  text-size: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-weight: 150%;
+}
+
+h1 {
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+section {
+  margin-top: 60px;
+}
+

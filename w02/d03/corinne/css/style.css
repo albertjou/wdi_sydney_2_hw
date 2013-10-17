@@ -1,0 +1,55 @@
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+body {
+  font-family: times;
+}
+
+header img {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+}
+
+article h2 {
+  font-size: 18px;
+  color: #666666;
+  letter-spacing: .5px;
+}
+
+p {
+  font-size: 13px;
+  letter-spacing: .3px;
+  color: #8D8E8E;
+}
+
+p.highlited_text {
+  color: #59B1CB;
+  margin-top: -2.5px;
+}
+
+p.main_p {
+  line-height: 1.65em;
+  margin-top: -12px;
+  margin-bottom: 31px;
+  font-weight: lighter;
+  letter-spacing: -.1px;
+}
+
+a {
+  color: #59B1CB;
+  text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+  .boxes img {
+  border: 1px solid white;
+  outline: 5px solid #CAC9CB;
+  margin: 0 4.5px 19px 4.5px;
+}
+

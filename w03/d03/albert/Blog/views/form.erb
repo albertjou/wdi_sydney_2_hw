@@ -1,0 +1,7 @@
+<form method='post' action='/create'>
+<input class="in1" value='<%= @post? @post.title : "Title" %>' type='text' title="Title" name='title' autofocus>
+  <textarea type='text' name='body' cols="25" rows"25"><%= @post? @post.body : "Content" %></textarea>
+  <br />
+  <input type="hidden" name="id" value='<%= @post.id if @post %>'>
+  <button><%= @post.nil? ? "New Post" : "Edit Post"  %></button>
+</form>

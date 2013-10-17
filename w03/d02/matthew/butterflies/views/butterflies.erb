@@ -1,0 +1,12 @@
+<% @rows.each do |row| %>
+  <section>
+    <ul>
+      <li><b><%= row['name'] %> </b></li>
+      <li><%= row['family'] %></li>
+      <li><img src='<%= row['picture'] %>'></li>
+      <li><a href='/butterflies/<%= row['id'] %>/edit/'>Edit</a></li>
+      <li><form action="/butterflies/<%= row['id'] %>/delete" method='post'><button>Delete</button></form></li>
+    </ul>
+
+  </section>
+<% end %>

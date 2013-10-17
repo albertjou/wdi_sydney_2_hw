@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+  <h1>URL:</h1>
+  <form method='get' action='/create'>
+    <input value="URL" type='text' name='url' autofocus>
+  </form>
+
+  <% if params[:url] != nil %>
+    <h1>Your shortened URL is <%= @new_url %></h1>
+    <%= @message %>
+  <% end %>
+
+  <% @urls.each do |x| %>
+    <section>
+      <h2="original"><%= x.orig_url %></h2> is <h2="short"><%= x.short_url %>. It has been accessed <%= x.counter %> times.
+    </section>
+  <% end %>
+</body>
+</html>

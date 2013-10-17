@@ -1,0 +1,20 @@
+<!--   <section>
+
+      <b><#%= @post['title'] %> </b>
+      <p><#%= @post['body'] %></p>
+      <p><#%= @post['created_at'] %></p>
+
+
+
+  </section> -->
+
+<div class='main'>
+
+      <h2><%= @post['title']%></h2>
+      <p><%=@post.body%></p>
+      <p class="center"> Posted by: <span class="myname"><b>Matthew Thees  //</b></span> <%= @post['created_at'] %> //</p>
+
+      <form action='/post/<%= @post['id'] %>/edit/'><button>Edit</button></form>
+      <form action="/post/<%= @post['id'] %>/delete" method='post'><button>Delete</button></form>
+
+</div>
