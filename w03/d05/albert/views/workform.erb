@@ -1,0 +1,15 @@
+<form method='post' action='/artworkcreation'>
+  <label>Name:</label><input value='<%= @artwork.name if @artwork %>' type='text' name='name' autofocus>
+  <label>Year:</label><input value='<%= @artwork.year if @artwork %>' type='text' name='year'>
+  <label>Price:</label><input value='<%= @artwork.price if @artwork %>' type='number' name='price'>
+  <label>Image:</label><input value='<%= @artwork.image if @artwork %>' type='text' name='image'>
+  <label>Artist:</label>
+    <select name='artist'>
+      <option value="">""</option>
+    <% @artists.each do |artist| %>
+    <option value="<%= artist %>"><%= artist %></option>
+    <% end %>
+  </select>
+  <input type="hidden" name="id" value='<%= @artwork.id if @artwork %>'>
+  <button><%= @artwork.nil? ? "New Artwork" : "Edit Artwork"  %></button>
+</form>

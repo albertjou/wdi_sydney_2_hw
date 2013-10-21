@@ -1,0 +1,25 @@
+<h3><a href="/artist/new">Create new artist</a></h3>
+<% @artists.each do |artist| %>
+<section>
+  <h2 class="name"><%= artist.name %></h2>
+  <img src='<%= artist.image %>'>
+  <p class="date">Date of birth: <%= artist.dob %></p>
+  <p class="date">Date of death: <%= artist.dod ? "N/A" : "#{artist.dod}" %></p>
+  <p class="nationality"><%= artist.nationality %></p>
+  <div class="artwork">
+    <ul>
+
+      <!-- Iterates through each artwork created by the artist and shows picture -->
+      <% artist.artworks.each do |artwork| %>
+      <li><a href="/artwork/<%= artwork.id %>"><img src="<%= artwork.image %>"><h3><%= artwork.name %></h3></a></li>
+      <% end %>
+
+    </ul>
+  </div><!-- artwork -->
+
+  <a href='/artist/<%= artist.id %>/delete'>Delete</a>
+    <br />
+  <a href='/artist/<%= artist.id %>/edit'>Edit</a>
+  <br />
+<% end %>
+

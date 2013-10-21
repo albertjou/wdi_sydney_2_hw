@@ -1,0 +1,14 @@
+  <div class="column1">
+    <ul>
+      <% @artists.each do |artist| %>
+      <li><a href='/artist/<%= artist.id %>'><img src="<%= artist.image %>"></a></li>
+      <% end %>
+    </ul>
+  </div><!-- column1 -->
+  <div class="column2">
+    <ul>
+    <% @artworks.each do |artwork| %>
+    <li><a href='/artwork/<%= artwork.id %>'><img src="<%= artwork.image %>"></a></li>
+    <% end %>
+  </ul>
+</div><!-- column2 -->

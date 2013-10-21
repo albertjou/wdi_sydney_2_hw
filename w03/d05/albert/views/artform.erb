@@ -1,0 +1,9 @@
+<form method='post' action='/artistcreation'>
+  <label>Name:</label><input value='<%= @artist.name if @artist %>' type='text' name='name' autofocus>
+  <label>Date of birth:</label><input value='<%= @artist.dob if @artist %>' type='text' name='dob'>
+  <label>Date of death:</label><input value='<%= @artist.dod if @artist %>' type='text' name='dod'>
+  <label>Nationality:</label><input value='<%= @artist.nationality if @artist %>' type='text' name='nationality'>
+  <label>Picture source:</label><input value='<%= @artist.image if @artist %>' type='text' name='image'>
+  <input type="hidden" name="id" value='<%= @artist.id if @artist %>'>
+  <button><%= @artist.nil? ? "New Artist" : "Edit Artist"  %></button>
+</form>

@@ -1,0 +1,15 @@
+<h3><a href="/artwork/new">Create new artwork</a></h3>
+
+<% @artworks.each do |artwork| %>
+<section>
+  <h2 class="name"><%= artwork.name %></h2>
+  <img src='<%= artwork.image %>'>
+  <p class="year">Year: <%= artwork.year %></p>
+  <p class="price">Price: <%= artwork.price %></p>
+  <p class="owner"><%= artwork.artist %></p>
+  <a href='/artwork/<%= artwork.id %>/delete'>Delete</a>
+    <br />
+  <a href='/artwork/<%= artwork.id %>/edit'>Edit</a>
+  <br />
+<% end %>
+

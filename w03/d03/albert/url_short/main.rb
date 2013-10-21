@@ -24,7 +24,7 @@ end
 
 get '/create' do
   exist = Url.find_by_orig_url(params[:url])
-  if exist
+  if !exist
     @new = false
     @new_url = Url.new
     @new_url.orig_url = params[:url]
@@ -33,9 +33,9 @@ get '/create' do
     @new_url.counter = 0
     @new_url.save
     @message = "Short url created"
-  else
-    @message = "You already have a short url."
-  end
+  # else
+  #   @message = "You already have a short url."
+  # end
   redirect to '/'
 end
 
