@@ -1,0 +1,8 @@
+<%= params[:guess] %> is....
+<% if @answer != "correct" %>
+  <img src="http://blogs.studentlife.utoronto.ca/lifeatuoft/files/2013/08/wrong.gif">
+  <% else %>
+  <img src="http://stream1.gifsoup.com/view1/1926115/that-is-correct-o.gif">
+  <% end %>
+  <%= @answer %>
+

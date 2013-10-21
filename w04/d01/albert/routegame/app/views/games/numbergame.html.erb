@@ -1,0 +1,11 @@
+Welcome to the number game.
+
+<h1>Guess the number</h1>
+
+<ul>
+<% Array(1..2).each do |number| %>
+<li><a href="/numbergame/<%= number %>"><%= number %></a></li>
+
+<% end %>
+
+</ul>

@@ -1,0 +1,40 @@
+body ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body a{
+  text-decoration: none;
+}
+li {
+  display: inline;
+}
+nav h1 {
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  margin: 30px;
+}
+
+nav a{
+  border-radius: 5px;
+  height: 20px;
+  background-color: #bada55;
+  padding: ;
+}
+
+.magic input, .answer h3 {
+  padding: 10px;
+  margin-left: 10px;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+
