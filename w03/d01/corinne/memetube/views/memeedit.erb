@@ -1,0 +1,21 @@
+<h2>Enter your new video details</h2>
+<form method="post" action="/videos/update">
+  <label for="name">Name:</label>
+  <input name="name" placeholder="Enter your video name here" value="<%= @video['name'] %>">
+
+  <label for="description">Description:</label>
+  <textarea name="description" placeholder="Enter a description of your video name here"><%= @video['description'] %></textarea>
+
+  <label for="genre">Genre:</label>
+  <select name="genre">
+    <%= erb :genre_menu %>
+  </select>
+
+  <label for="embed">Url:</label>
+  <textarea name="embed" placeholder="Enter your video's url here"><%= @video['embed'] %></textarea>
+
+  <input type="hidden" name="id" value="<%= @video['id'] %>">
+
+  <input type="submit" value="Update">
+</form>
+

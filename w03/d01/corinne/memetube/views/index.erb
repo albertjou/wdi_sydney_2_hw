@@ -1,0 +1,13 @@
+<h2>Saved Videos</h2>
+<h3>Filter Videos by Genre</h3>
+<%= erb :genre_select %>
+
+<% if @genre_select == nil %>
+  <ul>
+    <% @videos.each do |video| %>
+      <li><a href="/videos/<%= video['id'] %>"><%= video['name'] %></a></li>
+    <% end %>
+  </ul>
+<% end %>
+
+

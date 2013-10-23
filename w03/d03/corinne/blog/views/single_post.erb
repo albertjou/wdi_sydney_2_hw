@@ -1,0 +1,48 @@
+<% @posts.each do |post| %>
+  <section>
+    <div class='post'></div>
+      <h2><a href='/posts/<%= post['id'] %>'><%= post['title'] %></a></h2>
+
+      <article>
+        <p class='body'><%= post.body %></p>
+      </article>
+
+      <div class='link'><a href='/posts/<%= post['id'] %>/edit/'>Edit</a></div>
+
+      <form action='/posts/<%= post['id'] %>/delete' method='post'>
+        <button class='button_delete'>Delete</button>
+      </form>
+
+      <footer>
+        <p>Author: Unicorn Mushroom </p>
+        <p class='created_at'>Created: <%= post['created_at'] %></p>
+      </footer>
+    </div>
+
+    <div class='link'>
+      <p><a href="/posts/<%=post['id'] %>/comments/new">Add a Comment</a></p>
+    </div>
+
+
+    <h3>Comments</h3>
+
+    <% post.comments.each do |comment| %>
+
+      <div class='comments'></div>
+        <p class='name'><%= comment['name'] %> says:</p>
+
+        <p class='comment'><%= comment['comment'] %></p>
+
+        <div class='link'>
+          <a href='/posts/<%= post['id'] %>/comments/<%= comment['id'] %>/edit/'>Edit</a>
+        </div>
+
+        <form action='/posts/<%= post['id'] %>/comments/<%= comment['id'] %>/delete' method='post'>
+          <button class='button_delete'>Delete</button>
+        </form>
+
+
+      </div>
+    <% end %>
+  </section>
+<% end %>

@@ -1,0 +1,11 @@
+<section>
+  <form method='post' action='<%=  @comment.nil? ? "/posts/#{params['id']}/comments/create" : "/posts/#{params['id']}/comments/#{params['comment_id']}/update/" %>'>
+
+    <label>Name:</label><input value='<%= @comment['name'] if @comment %>' type='text' name='name' placeholder='Enter your name here' autofocus maxlength=50>
+
+    <label>Comment:</label><textarea type='text' name='comment'><%= @comment['comment'] if @comment %></textarea>
+
+    <button class='new_edit'><%= @comment.nil? ? "New Comment" : "Edit Comment"  %></button>
+
+  </form>
+</section>

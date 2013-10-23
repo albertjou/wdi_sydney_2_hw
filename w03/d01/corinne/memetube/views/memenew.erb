@@ -1,0 +1,18 @@
+<h2>Enter your new video details</h2>
+<form method="post" action="/videos/create">
+  <label for="name">Name:</label>
+  <input name="name" placeholder="Your video name here">
+
+  <label for="description">Description:</label>
+  <textarea name="description"></textarea>
+
+  <label for="genre">Genre:</label>
+  <select name="genre">
+    <%= erb :genre_menu %>
+  </select>
+
+  <label for="embed">Url:</label>
+  <textarea name="embed" placeholder="Your video's url here"></textarea>
+
+  <input type="submit" value="Create">
+</form>

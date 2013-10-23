@@ -1,0 +1,11 @@
+<section>
+  <form method='post' action='<%= @post.nil? ? "/create" : "/posts/#{@post.id}" %>'>
+
+    <label>Title:</label><input value='<%= @post['title'] if @post %>' type='text' name='title' autofocus maxlength=50>
+
+    <label>Main Blog Post:</label><textarea type='text' name='body'><%= @post['body'] if @post %></textarea>
+
+    <button class='new_edit'><%= @post.nil? ? "New Blog Entry" : "Edit Blog Entry"  %></button>
+
+  </form>
+</section>
