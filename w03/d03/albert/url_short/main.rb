@@ -33,9 +33,9 @@ get '/create' do
     @new_url.counter = 0
     @new_url.save
     @message = "Short url created"
-  # else
-  #   @message = "You already have a short url."
-  # end
+  else
+    @message = "You already have a short url."
+  end
   redirect to '/'
 end
 

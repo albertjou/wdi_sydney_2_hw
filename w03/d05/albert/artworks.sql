@@ -2,7 +2,8 @@ CREATE TABLE artworks (
   id SERIAL4 PRIMARY KEY,
   name TEXT,
   image TEXT,
-  height SMALLINT,
-  country TEXT,
-  deaths SMALLINT
+  year DATE,
+  price MONEY,
+  artist_id SERIAL4,
+  FOREIGN KEY (artist_id) REFERENCES artists (id)
 );
