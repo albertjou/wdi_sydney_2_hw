@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/underscore.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/hangman.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>HangMan</title>
+</head>
+<body>
+  <div class="container">
+    <h1>HangMan</h1>
+
+    <div id="hangman">
+      <div id="restart">
+        <div id="pole" class="animated bounceInDown">
+          <div id="person">
+            <div id="head">
+              <p>**<br />_</p>
+
+            </div>
+            <div id="torso">
+            </div>
+            <div id="legs">
+            </div>
+            <div id="arms">
+            </div>
+          </div>
+        </div>
+
+        <input type="button" value="Restart" onClick="window.location.reload()">
+      </div>
+    </div>
+    <div id="answer">
+    </div>
+
+    <div id="guesses">
+    </div>
+
+    <div id="guessed">
+    </div>
+
+    <div id="settings">
+      Guesses remaining:
+      <input type="number" id="set-guess" placeholder="# guesses allowed", value="6">
+    </div>
+
+  </div>
+</body>
+</html>
